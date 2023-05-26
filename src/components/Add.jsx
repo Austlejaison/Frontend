@@ -41,7 +41,7 @@ const Add = (props) => { //post no value. put some value comes
   }
    else if(props.method==="put")
    {
-    axios.put("http://localhost:8080/edit/"+datas._id,datas)
+    axios.put("http://localhost:8080/update/"+datas._id,datas)
     .then((response)=>
     {
       alert("UPDATED")
