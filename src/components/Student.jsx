@@ -30,7 +30,9 @@ const Student = () => {
     .catch()
 
   }
-
+const updateValue = (val)=>{
+    console,log()
+} 
   return (
 
     <div>
