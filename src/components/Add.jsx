@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 import Student from './Student'
 import axios from 'axios'
 
-const Add = () => {
+const Add = (props) => {
 
   
-  var [datas,setDatas] = useState({sname:'',sgrade:''}) 
+  var [datas,setDatas] = useState(props.data) 
   
   const inputHandler = (e) => 
 

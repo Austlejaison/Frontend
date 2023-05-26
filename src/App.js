@@ -15,7 +15,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Student />}></Route>
-        <Route path='/Add' element={<Add />}></Route>
+        <Route path='/Add' element={<Add data={sname:'',sgrade:''}}></Route></Routes>
       </Routes>
 
 

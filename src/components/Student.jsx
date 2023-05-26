@@ -31,7 +31,7 @@ const Student = () => {
 
   }
 const updateValue = (val)=>{
-    console,log()
+    console,log("Clicked Update button:")
 } 
   return (
 
@@ -72,6 +72,12 @@ const updateValue = (val)=>{
             </Table>
         </TableContainer>
     </div>
+    if(update){
+        finalJSX = <Add data = {singleValue} method = 'put'></Add>
+    }
+    return (
+        final JSX
+    )
   )
 }
 
