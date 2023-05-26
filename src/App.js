@@ -1,21 +1,22 @@
 import './App.css';
-import Navbar from './components/Navbar';
+import NavBar from './components/NavBar';
 import { Route, Routes } from 'react-router-dom';
 import Student from './components/Student';
 
 import Add from './components/Add';
 
-function App() {
+function App(){
+
+  //To pass an argument in Add for using it twice
 
  
 
-
   return (
-    <><Navbar /><div className="App">
+    <><NavBar /><div className="App">
 
       <Routes>
         <Route path='/' element={<Student />}></Route>
-        <Route path='/Add' element={<Add data={sname:'',sgrade:''}}></Route></Routes>
+        <Route path='/Add' element={<Add data={{sname:'',sgrade:'' }} method='post' />}></Route>
       </Routes>
 
 
@@ -23,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

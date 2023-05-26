@@ -1,8 +1,9 @@
 import { AppBar, Box, Button, Toolbar, Typography } from '@mui/material'
+import { grey } from '@mui/material/colors'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <div >
         <Box sx={{ flexGrow: 1 }}>
@@ -20,4 +21,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavBar
